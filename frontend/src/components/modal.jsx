@@ -59,7 +59,7 @@ const parkDisplay = (park, user) => {
 const loginDisplay = (setFunc, close, setSnack) => {
 
     return (
-        <div className={'w-full h-full p-5 flex flex-col items-center'}>
+        <div className={'w-full h-full p-5 flex flex-col items-center overflow-y-auto'}>
             <img src="/logo.png" alt="" className={'w-30'}/>
             <h1 className={'text-[20px] mt-3 text-center font-bold'}>Welcome to National Park Tracker!</h1>
             <h2 className={'text-[18px] mt-[-5px] w-full text-center'}>Please login to track progress</h2>
