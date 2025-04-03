@@ -60,13 +60,13 @@ const loginDisplay = (setFunc, close, setSnack) => {
 
     return (
         <div className={'w-full h-full p-5 flex flex-col items-center overflow-y-auto'}>
-            <img src="/logo.png" alt="" className={'w-30'}/>
+            <img src="/logo.png" alt="" className={'w-30 max-sm:w-10'}/>
             <h1 className={'text-[20px] mt-3 text-center font-bold'}>Welcome to National Park Tracker!</h1>
             <h2 className={'text-[18px] mt-[-5px] w-full text-center'}>Please login to track progress</h2>
             <input className={'mt-5 text-[20px] pb-2 border-b-1 outline-none'} type="text" placeholder={'Username'}/>
             <input className={'mt-5 text-[20px] pb-2 border-b-1 outline-none'} type="text" placeholder={'Password'}/>
-            <motion.button onClick={() => auth('login', setFunc, close, setSnack)} whileTap={{scale: 0.95, background: 'rgb(170, 170, 170)'}} className={'mt-5 text-[20px] px-5 py-3 shadow-xl rounded-xl border-b-2'}>Login</motion.button>
-            <motion.button onClick={() => auth('signup', setFunc, close, setSnack)} whileTap={{scale: 0.95, background: 'rgb(170, 170, 170)'}} className={'mt-6 px-4 py-2 shadow-xl rounded-xl border-b-2'}>Sign Up</motion.button>
+            <motion.button onClick={() => auth('login', setFunc, close, setSnack)} whileTap={{scale: 0.95, background: 'rgb(170, 170, 170)'}} className={'mt-5 max-sm:mt-1 text-[20px] px-5 py-3 shadow-xl rounded-xl border-b-2'}>Login</motion.button>
+            <motion.button onClick={() => auth('signup', setFunc, close, setSnack)} whileTap={{scale: 0.95, background: 'rgb(170, 170, 170)'}} className={'mt-6 max-sm:mt-2 px-4 py-2 shadow-xl rounded-xl border-b-2'}>Sign Up</motion.button>
         </div>
     )
 }

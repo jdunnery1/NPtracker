@@ -47,7 +47,7 @@ const Gallery = () => {
                     <h1 onClick={() => user.username ? navigate('/track') : setModal(true)} className={'max-sm:ml-5'}>Tracking</h1>
                 </div>
                 <div id={'nav-right'}>
-                    <motion.div id={'nav-right-btn'} onClick={() => {setModal(!user.username); setActive(null); logout()}} whileHover={!user?.username ? {scale: 1.05} : {scale: 1.05, width: 200}} whileTap={{ scale: 0.95, background: "rgb(150,150,150)"}} className={'px-5 py-2 rounded-xl shadow-xl overflow-hidden hover:flex hover:justify-between items-center'}>{!user?.username ? 'Login' : user.username}
+                    <motion.div id={'nav-right-btn'} onClick={() => {setModal(!user?.username); setActive(null); logout()}} whileHover={!user?.username ? {scale: 1.05} : {scale: 1.05, width: 200}} whileTap={{ scale: 0.95, background: "rgb(150,150,150)"}} className={'px-5 py-2 rounded-xl shadow-xl overflow-hidden hover:flex hover:justify-between items-center'}>{!user?.username ? 'Login' : user.username}
                         {user?.username && showLogout && <motion.span initial={{scale: 0}} animate={{scale:1}} className={'text-[10px] text-red-400'}>X Log out</motion.span>}
                     </motion.div>
                 </div>
