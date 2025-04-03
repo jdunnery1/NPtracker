@@ -1,0 +1,8 @@
+
+#filters-window {
+    display: none;
+}
+
+#filters-title:hover #filters-window {
+    display: flex;
+}
